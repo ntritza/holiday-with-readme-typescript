@@ -3,7 +3,7 @@ speakeasyVersion: latest
 sources:
     Holiday Destinations API with Readme docs:
         inputs:
-            - location: ../openapi.yaml
+            - location: registry.speakeasyapi.dev/ritza-rzx/ritza/holiday-destinations-api-with-readme-docs
         registry:
             location: registry.speakeasyapi.dev/ritza-rzx/ritza/holiday-destinations-api-with-readme-docs
 targets:
