@@ -1,0 +1,36 @@
+speakeasyVersion: 1.492.0
+sources:
+    Holiday Destinations API with Readme docs:
+        sourceNamespace: holiday-destinations-api-with-readme-docs
+        sourceRevisionDigest: sha256:914ad3f8fedd4fd5d24215f6f08c9b8a55b597cccebf4ca2efd8ee36eafdc86d
+        sourceBlobDigest: sha256:850ca4dca9e64d14366ec0fb14c78c3a76a961e4372eff2965935120ad275b5e
+        tags:
+            - latest
+            - 1.2.0
+targets:
+    holiday-with-readme:
+        source: Holiday Destinations API with Readme docs
+        sourceNamespace: holiday-destinations-api-with-readme-docs
+        sourceRevisionDigest: sha256:914ad3f8fedd4fd5d24215f6f08c9b8a55b597cccebf4ca2efd8ee36eafdc86d
+        sourceBlobDigest: sha256:850ca4dca9e64d14366ec0fb14c78c3a76a961e4372eff2965935120ad275b5e
+        codeSamplesNamespace: holiday-destinations-api-with-readme-docs-typescript-code-samples
+        codeSamplesRevisionDigest: sha256:0bac86f30f57d95add7fd18bf5b44a5e4cea314827131d706250e9345783bdf9
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        Holiday Destinations API with Readme docs:
+            inputs:
+                - location: ../openapi.yaml
+            registry:
+                location: registry.speakeasyapi.dev/ritza-rzx/ritza/holiday-destinations-api-with-readme-docs
+    targets:
+        holiday-with-readme:
+            target: typescript
+            source: Holiday Destinations API with Readme docs
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/ritza-rzx/ritza/holiday-destinations-api-with-readme-docs-typescript-code-samples
+                style: readme
+                langOverride: javascript
+                blocking: false

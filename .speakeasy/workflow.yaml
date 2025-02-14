@@ -1,0 +1,18 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    Holiday Destinations API with Readme docs:
+        inputs:
+            - location: ../openapi.yaml
+        registry:
+            location: registry.speakeasyapi.dev/ritza-rzx/ritza/holiday-destinations-api-with-readme-docs
+targets:
+    holiday-with-readme:
+        target: typescript
+        source: Holiday Destinations API with Readme docs
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/ritza-rzx/ritza/holiday-destinations-api-with-readme-docs-typescript-code-samples
+            style: readme
+            langOverride: javascript
+            blocking: false
