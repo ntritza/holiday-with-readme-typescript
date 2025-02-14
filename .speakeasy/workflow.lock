@@ -6,7 +6,6 @@ sources:
         sourceBlobDigest: sha256:850ca4dca9e64d14366ec0fb14c78c3a76a961e4372eff2965935120ad275b5e
         tags:
             - latest
-            - 1.2.0
 targets:
     holiday-with-readme:
         source: Holiday Destinations API with Readme docs
@@ -14,20 +13,23 @@ targets:
         sourceRevisionDigest: sha256:914ad3f8fedd4fd5d24215f6f08c9b8a55b597cccebf4ca2efd8ee36eafdc86d
         sourceBlobDigest: sha256:850ca4dca9e64d14366ec0fb14c78c3a76a961e4372eff2965935120ad275b5e
         codeSamplesNamespace: holiday-destinations-api-with-readme-docs-typescript-code-samples
-        codeSamplesRevisionDigest: sha256:0bac86f30f57d95add7fd18bf5b44a5e4cea314827131d706250e9345783bdf9
+        codeSamplesRevisionDigest: sha256:b807044bd5afe99f5f1c66ef1813cf1c0424c2228135718ff8f1189830b60b11
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
     sources:
         Holiday Destinations API with Readme docs:
             inputs:
-                - location: ../openapi.yaml
+                - location: registry.speakeasyapi.dev/ritza-rzx/ritza/holiday-destinations-api-with-readme-docs
             registry:
                 location: registry.speakeasyapi.dev/ritza-rzx/ritza/holiday-destinations-api-with-readme-docs
     targets:
         holiday-with-readme:
             target: typescript
             source: Holiday Destinations API with Readme docs
+            publish:
+                npm:
+                    token: $npm_token
             codeSamples:
                 registry:
                     location: registry.speakeasyapi.dev/ritza-rzx/ritza/holiday-destinations-api-with-readme-docs-typescript-code-samples

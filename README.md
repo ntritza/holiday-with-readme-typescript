@@ -43,34 +43,30 @@ Holiday Destinations API with Readme docs: An API to manage a list of holiday de
 <!-- Start SDK Installation [installation] -->
 ## SDK Installation
 
-> [!TIP]
-> To finish publishing your SDK to npm and others you must [run your first generation action](https://www.speakeasy.com/docs/github-setup#step-by-step-guide).
-
-
 The SDK can be installed with either [npm](https://www.npmjs.com/), [pnpm](https://pnpm.io/), [bun](https://bun.sh/) or [yarn](https://classic.yarnpkg.com/en/) package managers.
 
 ### NPM
 
 ```bash
-npm add <UNSET>
+npm add holiday-with-readme
 ```
 
 ### PNPM
 
 ```bash
-pnpm add <UNSET>
+pnpm add holiday-with-readme
 ```
 
 ### Bun
 
 ```bash
-bun add <UNSET>
+bun add holiday-with-readme
 ```
 
 ### Yarn
 
 ```bash
-yarn add <UNSET> zod
+yarn add holiday-with-readme zod
 
 # Note that Yarn does not install peer dependencies automatically. You will need
 # to install zod as shown above.
