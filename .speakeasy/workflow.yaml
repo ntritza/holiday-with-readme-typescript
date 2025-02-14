@@ -10,6 +10,9 @@ targets:
     holiday-with-readme:
         target: typescript
         source: Holiday Destinations API with Readme docs
+        publish:
+            npm:
+                token: $npm_token
         codeSamples:
             registry:
                 location: registry.speakeasyapi.dev/ritza-rzx/ritza/holiday-destinations-api-with-readme-docs-typescript-code-samples
